@@ -1,0 +1,48 @@
+$(document).ready(function() {
+    // Mobile menu toggle
+    $('.mobile-menu-toggle').click(function() {
+        $(this).toggleClass('active');
+        $('.nav-list').toggleClass('active');
+        $('body').toggleClass('menu-open');
+    });
+
+    // Smooth scrolling for anchor links
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top - 80,
+            },
+            500,
+            'linear'
+        );
+    });
+
+    // Add shadow to header on scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('header').addClass('scrolled');
+        } else {
+            $('header').removeClass('scrolled');
+        }
+    });
+
+    // Animation for features on scroll
+    $(window).scroll(function() {
+        $('.feature').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            
+            if (scroll > position - windowHeight + 100) {
+                $(this).addClass('animated');
+            }
+        });
+    });
+
+    // Hero button pulse effect
+    setInterval(function() {
+        $('.hero .btn').toggleClass('pulse');
+    }, 2000);
+});

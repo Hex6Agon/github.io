@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoškola Elita - Galéria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Horný informačný panel -->
+    <div class="top-bar">
+        <div class="container">
+            <a href="uvodna.html" class="logo">
+                <img src="meow.png" alt="Logo stránky" width="50">
+            </a>
+            <div class="contact-info">
+                <a href="tel:+421908988317">
+                    <i class="fas fa-phone"></i> +421 908 988 317
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=autoskola.elita@gmail.com&su=Dotaz%20z%20webovej%20stránky&body=Dobrý%20deň,%20mám%20záujem%20o..." target="_blank">
+                    <i class="fas fa-envelope"></i> autoskola.elita@gmail.com
+                </a>
+                <a href="https://www.google.com/maps/place/Bajkalská+30,+080+01+Prešov" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> Adresa: Bajkalská 30, Prešov
+                </a>
+            </div>
+            <div class="opening-hours">
+                <i class="far fa-clock"></i> Otváracia doba: Po-Pia 7:00-20:00
+            </div>
+        </div>
+    </div>
+
+    <!-- Header s navigáciou -->
+    <header>
+        <div class="container">
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Otvoriť menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-list">
+                    <li><a href="uvodna.html">Domov</a></li>
+                    <li class="active"><a href="galeria.html">Galéria</a></li>
+                    <li><a href="onas.html">O nás</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hlavná sekcia galérie -->
+        <section class="hero">
+            <div class="container">
+                <h1></h1>
+                <h1>Naša Galéria</h1>
+                <h4>Pozrite si fotografie z našej autoškoly</h4>
+            </div>
+        </section>
+
+        <!-- Galéria -->
+        <section class="text">
+            <div class="container">
+                <h2>Fotografie z výcviku</h2>
+                <p>V našej galérii nájdete momentky z praktického výcviku, teoretickej prípravy a kurzov prvej pomoci.</p>
+                
+                <div class="gallery-container">
+                    <!-- Galéria - riadok 1 -->
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="cvicisko.jpg" alt="Výcvik v autoškole">
+                            <div class="gallery-caption">Praktický výcvik s inštruktorom</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="k.png" alt="Teoretická príprava">
+                            <div class="gallery-caption">Teoretická výučba v učebni</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="kurz.jpg" alt="Kurz prvej pomoci">
+                            <div class="gallery-caption">Kurz prvej pomoci</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Galéria - riadok 2 -->
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="toyotayaris.jpg" alt="Vozidlá autoškoly">
+                            <div class="gallery-caption">Naše výcvikové vozidlá</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="premavka.jpg" alt="Mestská premávka">
+                            <div class="gallery-caption">Výcvik v mestskej premávke</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="autoskola.jpg" alt="Školiace priestory">
+                            <div class="gallery-caption">Naše školiace priestory</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ďalšie informácie -->
+        <section class="features">
+            <div class="container">
+                <h2>Prečo si vybrať nás?</h2>
+                <div class="features-grid">
+                    <article class="feature">
+                        <i class="fas fa-award"></i>
+                        <h3>Záruka kvality</h3>
+                        <p>V našej autoškole vieme prispôsobiť dĺžku trvania kurzu Vaším požiadavkám a to aj dodržať</p>
+                    </article>
+                    
+                    <article class="feature">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Skúsení inštruktori</h3>
+                        <p>Váš výcvik povedú skúsení inštruktori s dlhoročnou praxou</p>
+                    </article>
+                    
+                    <article class="feature">
+                        <i class="fas fa-medal"></i>
+                        <h3>Vysoká úspešnosť</h3>
+                        <p>Naši študenti majú vysokú úspešnosť pri skúškach</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Róbert Kirchner. Všetky práva vyhradené.</p>
+            <p>Email: autoskola.elita@gmail.com | Tel: +421 908 988 317</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

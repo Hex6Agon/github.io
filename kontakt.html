@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoškola Elita - Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Kontaktujte Autoškolu Elita v Prešove. Ponúkame vodičské kurzy skupiny B, kondičné jazdy a profesionálne školenie vodičov.">
+</head>
+
+<body>
+
+    <aside class="top-bar" aria-label="Kontaktné informácie">
+        <div class="container">
+            <a href="uvodna.html" class="logo">
+                <img src="meow.png" alt="Autoškola Elita logo" width="50" height="50">
+            </a>
+        </div>
+    </aside>
+
+    <header class="main-header">
+        <div class="container">
+            <nav aria-label="Hlavné menu">
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                    <span class="icon"><i class="fas fa-bars"></i></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+                
+                <ul id="main-menu" class="nav-list">
+                    <li><a href="uvodna.html">Domov</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    <li><a href="onas.html">O nás</a></li>
+                    <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="hero" aria-labelledby="main-heading">
+            <div class="container">
+                <h1></h1>
+                <h1 id="main-heading">Kontaktujte nás</h1>
+                <h4>Máte otázky? Radi vám odpovieme!</h4>
+            </div>
+        </section>
+
+<section class="contact-section">
+    <div class="container">
+        <h2><i class="fas fa-map-marker-alt"></i> Kde nás nájdete</h2>
+        
+        <div class="contact-layout">
+            <!-- Ľavá časť - Mapa -->
+            <div class="contact-map-container">
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.231944225643!2d21.23691131566882!3d48.73191137927372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee07a7248e50d%3A0xee6b10d6e5a9e3e1!2sBajkalsk%C3%A1%2030%2C%20080%2001%20Pre%C5%A1ov!5e0!3m2!1ssk!2ssk!4v1620000000000!5m2!1ssk!2ssk" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        title="Mapa Autoškoly Elita">
+                    </iframe>
+                    <a href="https://maps.google.com/?q=Bajkalská+30,+Prešov" target="_blank" class="map-link">
+                        <i class="fas fa-expand"></i> Zobraziť väčšiu mapu
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="contact-info-container">
+                <div class="contact-info-card">
+                    <h3>AUTOŠKOLA ELITA, s.r.o.</h3>
+                    
+                    <div class="info-group">
+                        <h4>Prevádzka</h4>
+                        <p><i class="fas fa-building"></i> Bajkalská 30, 080 01 Prešov</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h4>Sídlo</h4>
+                        <p><i class="fas fa-home"></i> A. Prídavku 24, 080 01 Prešov</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h4>Kontakt</h4>
+                        <p><i class="fas fa-phone"></i> 0908 988 317</p>
+                        <p><i class="fas fa-envelope"></i> autoskola.elita@gmail.com</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h4>IČO</h4>
+                        <p>44658940</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h4>Zápis</h4>
+                        <p>Obch. register Prešov, vl. č. 21303/P, odd. Sro</p>
+                    </div>
+                    
+                    <div class="info-group">
+                        <h4>Majiteľ</h4>
+                        <p>Róbert Kirchner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section" aria-labelledby="form-heading">
+            <div class="container">
+                <h2 id="form-heading">Napíšte nám</h2>
+                
+                <form id="contactForm" class="contact-form" method="post" action="/odoslat-formular">
+                    <div class="form-group">
+                        <label for="name">Meno a priezvisko <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefón</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Predmet <span class="required">*</span></label>
+                        <select id="subject" name="subject" required aria-required="true">
+                            <option value="" disabled selected>Vyberte predmet</option>
+                            <option value="vodicak">Vodičský preukaz skupiny B</option>
+                            <option value="kondicne">Kondičné jazdy</option>
+                            <option value="dotaz">Všeobecný dotaz</option>
+                            <option value="iné">Iné</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Správa <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">Práve prijímame nových žiakov!</h2>
+                <p>Neváhajte nás kontaktovať ešte dnes a rezervujte si termín.</p>
+                <a href="tel:+421908988317" class="btn btn-large">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="current-year">2025</span> Róbert Kirchner. Všetky práva vyhradené.</p>
+                <address>
+                    Email: <a href="mailto:autoskola.elita@gmail.com">autoskola.elita@gmail.com</a> | 
+                    Tel: <a href="tel:+421908988317">+421 908 988 317</a>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
